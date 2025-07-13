@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game with Heart Fruits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="control-panel">
+            <div class="speed-control">
+                <label for="speedRange">速度:</label>
+                <input type="range" id="speedRange" min="1" max="10" value="5">
+            </div>
+            <button id="startButton">开始</button>
+            <button id="pauseButton">暂停</button>
+            <!-- 添加重新开始按钮 -->
+            <button id="restartButton">重新开始</button>
+        </div>
+        <div class="Score">得分: <span id="scoreValue">0</span></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
